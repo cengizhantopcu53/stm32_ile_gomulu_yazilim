@@ -5,13 +5,17 @@ https://linktr.ee/cengizhantopcu53
 STM32 ile Gömülü Yazılım
 
 01 Clock
+
 01_01 Sistem Saat Ayarlama [HAL, SPL, REGISTER]
 
 02 GPIO 
+
 02_01 Harici Led Yakma [HAL, SPL, REGISTER]
+
 02_02 Buton ile Led Yakma [HAL, SPL, REGISTER]
 
 03 External İnterrupt
+
 03_01 External Interrupt [HAL, SPL, REGISTER]
 
 04 ADC 
