@@ -19,45 +19,65 @@ STM32 ile Gömülü Yazılım
 03_01 External Interrupt [HAL, SPL, REGISTER]
 
 04 ADC 
+
 04_01 ADC Verisi Okuma [HAL, SPL, REGISTER]
+
 04_02 ADC Interrupt [HAL]
 
 05 DAC 
+
 05_01 DAC Kullanımı [HAL, SPL, REGISTER]
+
 05_02 ADC Değeri İle DAC Kontrolü [HAL]
 
 06 DMA [HAL, SPL, REGISTER]
 
 07 Timer
+
 07_01 Timer Değer Okuma [SPL, REGISTER]
+
 07_02 Timer Interrupt [HAL]
 
 08 PWM
+
 08_01 PWM Kullanımı [HAL, SPL, REGISTER]
 
-09 UART & USART
+09 USART
+
 09_01 USART ile Mesaj Gönderme [HAL, SPL, REGISTER]
+
 09_02 USART ile Led Yakma [HAL]
 
 10 I2C
+
 10_01 I2C Kullanımı [SPL, REGISTER]
 
 11 SPI 
 
 12 RNG
+
 12_01 RNG Kullanımı [HAL, SPL, REGISTER]
 
 13 Flash Memory
+
 13_01 Flash Memory Kullanımı [HAL, SPL, REGISTER]
 
 14 Örnek Projeler
+
 14_01 ADXL345 
+
 14_02 MPU6050
+
 14_03 BMP180 
+
 14_04 OLED EKRAN 
+
 14_05 NRF24L01
+
 14_05 SD KART
+
 14_07 GPS
+
 14_08 LORA
 
  
