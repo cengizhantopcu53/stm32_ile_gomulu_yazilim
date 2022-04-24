@@ -68,7 +68,7 @@ STM32 ile Gömülü Yazılım
 
 14_02 MPU6050
 
-14_03 BMP280 
+14_03 BMP180 
 
 14_04 OLED EKRAN 
 
@@ -80,4 +80,5 @@ STM32 ile Gömülü Yazılım
 
 14_08 LORA
 
+14_09 BME280 
  
