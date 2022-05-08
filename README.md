@@ -82,3 +82,4 @@ STM32 ile Gömülü Yazılım
 
 14_09 BME280 
  
+14_10 BMP280 
