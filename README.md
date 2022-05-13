@@ -70,7 +70,7 @@ STM32 ile Gömülü Yazılım
 
 14_03 BMP180 
 
-14_04 OLED EKRAN 
+14_04 OLED 
 
 14_05 NRF24L01
 
