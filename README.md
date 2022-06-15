@@ -48,8 +48,6 @@ STM32 ile Gömülü Yazılım
 
 09_02 USART ile Led Yakma [HAL]
 
-09_03 UART Ring Buffer [HAL]
-
 10 I2C
 
 10_01 I2C Kullanımı [SPL, REGISTER]
