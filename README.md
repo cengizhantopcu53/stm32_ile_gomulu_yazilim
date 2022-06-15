@@ -54,6 +54,8 @@ STM32 ile Gömülü Yazılım
 
 11 SPI 
 
+11_01 SPI Kullanımı [HAL]
+
 12 RNG
 
 12_01 RNG Kullanımı [HAL, SPL, REGISTER]
