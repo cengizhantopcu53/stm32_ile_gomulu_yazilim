@@ -30,7 +30,9 @@ STM32 ile Gömülü Yazılım
 
 05_02 ADC Değeri İle DAC Kontrolü [HAL]
 
-06 DMA [HAL, SPL, REGISTER]
+06 DMA
+
+06_01 DMA ile ADC Değer Okuma [HAL, SPL, REGISTER]
 
 07 Timer
 
