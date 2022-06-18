@@ -80,7 +80,7 @@ STM32 ile Gömülü Yazılım
 
 14_05 NRF24L01
 
-14_05 SD KART
+14_06 SD KART
 
 14_07 GPS
 
