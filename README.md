@@ -70,22 +70,22 @@ STM32 ile Gömülü Yazılım
 
 14 Örnek Projeler
 
-14_01 ADXL345 
+14_01 ADXL345 [Üç Eksen Değer Okuma] 
 
-14_02 MPU6050
+14_02 MPU6050 [İvmeölçer ve Jiroskop Ölçümü] 
 
-14_03 BMP180 
+14_03 BMP180 [Sıcaklık ve Basınç Okuma] 
 
-14_04 OLED 
+14_04 OLED [Ekran Kullanımı] 
 
-14_05 NRF24L01
+14_05 NRF24L01 [Giriş] 
 
-14_06 SD KART
+14_06 SD KART [Veri Kaydetme] 
 
-14_07 GPS
+14_07 GPS [Enlem ve Boylam] 
 
-14_08 LORA
+14_08 LORA [Modül Çalıştırma] 
 
-14_09 BME280 
+14_09 BME280 [Sıcaklık, Nem ve Basınç Okuma] 
  
-14_10 BMP280 
+14_10 BMP280 [Sıcaklık ve Basınç Okuma] 
