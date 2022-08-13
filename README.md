@@ -71,3 +71,26 @@ STM32 ile Gömülü Yazılım
 14 Flash Memory
 
 14_01 Flash Memory Kullanımı [HAL, SPL, REGISTER]
+
+Örnek Projeler
+
+ADXL345 [Üç Eksen Değer Okuma] 
+
+MPU6050 [İvmeölçer ve Jiroskop Ölçümü] 
+
+BMP180 [Sıcaklık ve Basınç Okuma] 
+
+OLED [Ekran Kullanımı] 
+
+NRF24L01 [Giriş] 
+
+SD KART [Veri Kaydetme] 
+
+GPS [Enlem ve Boylam] 
+
+LORA [Modül Çalıştırma] 
+
+BME280 [Sıcaklık, Nem ve Basınç Okuma] 
+ 
+BMP280 [Sıcaklık ve Basınç Okuma] 
+
