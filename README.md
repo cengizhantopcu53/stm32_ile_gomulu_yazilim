@@ -60,17 +60,13 @@ STM32 ile Gömülü Yazılım
 
 11_01 SPI Kullanımı [HAL]
 
-12 CAN
+12 RNG
 
-12_01 CAN Kullanımı [HAL]
+12_01 RNG Kullanımı [HAL, SPL, REGISTER]
 
-13 RNG
+13 Flash Memory
 
-13_01 RNG Kullanımı [HAL, SPL, REGISTER]
-
-14 Flash Memory
-
-14_01 Flash Memory Kullanımı [HAL, SPL, REGISTER]
+13_01 Flash Memory Kullanımı [HAL, SPL, REGISTER]
 
 Örnek Projeler
 
