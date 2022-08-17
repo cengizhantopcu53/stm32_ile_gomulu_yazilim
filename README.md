@@ -72,7 +72,7 @@ MPU6050 [İvmeölçer ve Jiroskop Ölçümü]
 
 BMP180 [Sıcaklık ve Basınç Okuma] 
 
-BMP280 [Sıcaklık ve Basınç Okuma]
+BME280 [Sıcaklık, Nem ve Basınç Okuma]
 
 SD KART [Veri Kaydetme] 
 
