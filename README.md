@@ -60,13 +60,9 @@ STM32 ile Gömülü Yazılım
 
 11_01 SPI Kullanımı [HAL]
 
-12 RNG
+12 Flash Memory
 
-12_01 RNG Kullanımı [HAL, REGISTER]
-
-13 Flash Memory
-
-13_01 Flash Memory Kullanımı [HAL, REGISTER]
+12_01 Flash Memory Kullanımı [HAL, REGISTER]
 
 Örnek Projeler
 
@@ -76,17 +72,12 @@ MPU6050 [İvmeölçer ve Jiroskop Ölçümü]
 
 BMP180 [Sıcaklık ve Basınç Okuma] 
 
-OLED [Ekran Kullanımı] 
-
-NRF24L01 [Giriş] 
+BMP280 [Sıcaklık ve Basınç Okuma]
 
 SD KART [Veri Kaydetme] 
 
-GPS [Enlem ve Boylam] 
+NRF24L01 [Kablosuz Haberleşme] 
 
 LORA [Modül Çalıştırma] 
 
-BME280 [Sıcaklık, Nem ve Basınç Okuma] 
- 
-BMP280 [Sıcaklık ve Basınç Okuma] 
-
+GPS [Enlem ve Boylam]
