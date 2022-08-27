@@ -1,9 +1,5 @@
 # stm32_ile_gomulu_yazilim
 
-https://www.youtube.com/playlist?list=PLoVX4C46JKvod9iEazGIQBGLtQHwXd_8L
-
-https://linktr.ee/cengizhantopcu53
-
 STM32 ile Gömülü Yazılım
 
 01 Clock
