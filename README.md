@@ -56,13 +56,9 @@ STM32 ile Gömülü Yazılım
 
 11_01 SPI Kullanımı [HAL]
 
-12 CAN
+12 Flash Memory
 
-12_01 CAN Kullanımı [HAL]
-
-13 Flash Memory
-
-13_01 Flash Memory Kullanımı [HAL, REGISTER]
+12_01 Flash Memory Kullanımı [HAL, REGISTER]
 
 14 USB
 
