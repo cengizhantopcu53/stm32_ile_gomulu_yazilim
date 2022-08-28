@@ -64,6 +64,10 @@ STM32 ile Gömülü Yazılım
 
 13_01 Flash Memory Kullanımı [HAL, REGISTER]
 
+14 USB
+
+14_01 USB Kullanımı [HAL]
+
 Örnek Projeler
 
 ADXL345 [Üç Eksen Değer Okuma] 
