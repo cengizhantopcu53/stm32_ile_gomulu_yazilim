@@ -46,8 +46,6 @@ STM32 ile Gömülü Yazılım
 
 09_01 USART ile Mesaj Gönderme [HAL, REGISTER]
 
-09_02 USART ile Led Yakma [HAL]
-
 10 I2C
 
 10_01 I2C Kullanımı [REGISTER]
