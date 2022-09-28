@@ -54,15 +54,11 @@ STM32 ile Gömülü Yazılım
 
 11_01 SPI Kullanımı [HAL]
 
-12 Flash Memory
-
-12_01 Flash Memory Kullanımı [HAL, REGISTER]
-
-14 USB
-
-14_01 USB Kullanımı [HAL]
-
 Örnek Projeler
+
+GPS [Enlem ve Boylam]
+
+LORA [Modül Çalıştırma] 
 
 ADXL345 [Üç Eksen Değer Okuma] 
 
@@ -75,7 +71,3 @@ BME280 [Sıcaklık, Nem ve Basınç Okuma]
 SD KART [Veri Kaydetme] 
 
 NRF24L01 [Kablosuz Haberleşme] 
-
-LORA [Modül Çalıştırma] 
-
-GPS [Enlem ve Boylam]
