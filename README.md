@@ -2,7 +2,7 @@
 
 STM32 ile Gömülü Yazılım
 
-01 Gİriş
+01 Giriş
 
 02 GPIO 
 
