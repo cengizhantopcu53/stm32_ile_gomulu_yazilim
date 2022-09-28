@@ -2,9 +2,7 @@
 
 STM32 ile Gömülü Yazılım
 
-01 Clock
-
-01_01 Sistem Saat Ayarlama [HAL, REGISTER]
+01 Gİriş
 
 02 GPIO 
 
