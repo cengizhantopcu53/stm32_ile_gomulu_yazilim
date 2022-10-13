@@ -54,6 +54,6 @@ Uygulamalar
 
 Projeler
 
-Üç Eksen Değer Okuma
+Üç Eksen Değer Okuma [ADXL345]
 
-Sıcaklık, Basınç ve Nem Okuma
+Sıcaklık, Basınç ve Nem Okuma [BMP180, BMP280]
