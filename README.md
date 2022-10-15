@@ -46,7 +46,7 @@
 
   - [08_01 USART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/09_01%20USART%20ile%20Mesaj%20G%C3%B6nderme) [HAL, REGISTER]
 
-  - [09_01 I2C Kullanımı[(https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20I2C%20Kullan%C4%B1m%C4%B1) [REGISTER]
+  - [09_01 I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20I2C%20Kullan%C4%B1m%C4%B1) [REGISTER]
 
   - [10_01 SPI Kullanımı]() [HAL]
 
