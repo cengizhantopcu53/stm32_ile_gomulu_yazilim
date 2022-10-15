@@ -22,9 +22,9 @@
 
 #### Uygulamalar
 
-  - 01_01 Harici Led Yakma [HAL, REGISTER]
+  - [01_01 Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_01%20Harici%20Led%20Yakma) [HAL, REGISTER]
 
-  - 01_02 Buton ile Led Yakma [HAL, REGISTER]
+  - [01_02 Buton ile Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_02%20Buton%20ile%20Led%20Yakma) [HAL, REGISTER]
 
   - 02_01 External Interrupt [HAL, REGISTER]
 
