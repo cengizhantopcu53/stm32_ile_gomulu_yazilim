@@ -54,7 +54,7 @@
 
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [ADXL345]
 
-  - [Basınç Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/S%C4%B1cakl%C4%B1k%2C%20Bas%C4%B1n%C3%A7%20ve%20Nem%20Okuma) [BMP180, BME280]
+  - [Sıcaklık, Basınç ve Nem Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/S%C4%B1cakl%C4%B1k%2C%20Bas%C4%B1n%C3%A7%20ve%20Nem%20Okuma) [BMP180, BME280]
   
   
 ##
