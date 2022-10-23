@@ -58,6 +58,6 @@
   
   
 ##
-**STM32 ile Gömülü Yazılım konusunda yaptığım çalışmaları derleyip bir belge oluşturdum. Belgedeki yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ya da üsteki pdf'ten ulaşabilirsiniz.*** 
+***STM32 ile Gömülü Yazılım konusunda yaptığım çalışmaları derleyip bir belge oluşturdum. Belgedeki yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ya da üsteki pdf'ten ulaşabilirsiniz.*** 
 ##
 
