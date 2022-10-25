@@ -55,9 +55,3 @@
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [ADXL345]
 
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
-  
-  
-##
-***STM32 ile Gömülü Yazılım konusunda yaptığım çalışmaları derleyip bir belge oluşturdum. Belgedeki yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ya da üsteki pdf'ten ulaşabilirsiniz.*** 
-##
-
