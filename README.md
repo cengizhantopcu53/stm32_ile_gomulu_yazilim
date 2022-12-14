@@ -58,7 +58,9 @@
   
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Kablosuz%20Haberlesme) [LORA, NRF24]
  
-  - [Konum Bilgisi]() [NEO6M]
+  - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Konum%20Bilgisi) [NEO6M]
   
-  - [Veri Kaydetme]() [SD CARD]
+  - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Veri%20Kaydetme) [SD CARD]
+  
+  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [OLED]
   
