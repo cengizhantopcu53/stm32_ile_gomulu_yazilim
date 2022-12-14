@@ -56,9 +56,9 @@
 
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
   
-  - [Kablosuz Haberleşme]() [LORA, NRF24]
+  - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Kablosuz%20Haberlesme) [LORA, NRF24]
  
   - [Konum Bilgisi]() [NEO6M]
   
-  - [veri Kaydetme]() [SD CARD]
+  - [Veri Kaydetme]() [SD CARD]
   
