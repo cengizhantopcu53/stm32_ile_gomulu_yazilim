@@ -48,7 +48,7 @@
 
   - [09_01 I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20I2C%20Kullan%C4%B1m%C4%B1) [REGISTER]
 
-  - [10_01 SPI Kullanımı]() [HAL]
+  - [10_01 SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20SPI%20Kullan%C4%B1m%C4%B1) [HAL]
 
 #### Projeler
 
