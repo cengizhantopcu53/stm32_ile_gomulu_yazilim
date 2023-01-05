@@ -24,6 +24,11 @@
 
 #include "stm32f4xx_hal.h"
 
+extern I2C_HandleTypeDef hi2c1;
+#define BME280_I2C &hi2c1
+
+#define BME280_ADDRESS 0xEC          // SDO is GND, 7 bit address is 0x76, 8 bit address 0x76<<1 = 0xEC
+
 /* Configuration for the BME280
 
  * @osrs is the oversampling to improve the accuracy
