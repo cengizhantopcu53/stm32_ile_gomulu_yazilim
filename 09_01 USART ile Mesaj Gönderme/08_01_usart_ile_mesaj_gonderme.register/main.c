@@ -1,4 +1,8 @@
 #include "stm32f4xx.h"
+#include "string.h"
+
+char Rx_Buff[100];
+int=0;
 
 void RCC_Config(void)
 {
@@ -33,7 +37,40 @@ void USART_Config(void)
 {
 	RCC->APB1ENR |= 1 << 18;               //USART3EN
 
+	USART3->BRR |= 0X1112;                 //BaudRate 9600
+	USART3->CR1 |= (1 << 2);               //Receiver Enable
+	USART3->CR1 |= (1 << 3);               //Transmitter Enable
+	USART3->CR1 |= (1 << 5);               //RXNE Interrupt Enable
+	USART3->CR1 |= (0 << 10);              //Parity Control Disabled
+	USART3->CR1 |= (0 << 12);              //Word Length 8 Data Bits
+	USART3->CR2 |= (0 << 12);              //1 Stop bit
+	USART3->CR1 |= (1 << 13);              //USART Enable
+}
 
+void NVIC_Config(void)
+{
+	NVIC->ISER[1] |= (1 <<7 )              //Interrupt Set Enable Register
+}
+
+USART_IRQHandler()
+{
+	volatile int Str;
+	Str= USART3->DR;
+	i++;
+}
+
+void Send_Char(char message)
+{
+	while(!(USART3->SR & 1 << 7));
+	USART3->DR=message;
+}
+
+void Send_Message(char *Str)
+{
+	while(*Str){
+		Send_Char(*Str);
+		Str;
+	}
 }
 
 int main(void)
@@ -41,9 +78,11 @@ int main(void)
 	RCC_Config();
 	GPIO_Config();
 	USART_Config();
+	NVIC_Config();
 
   while (1)
   {
-
+		Send_Message("Hello World \n");
+		for(int i=0; i<1000000; i++);
   }
 }
