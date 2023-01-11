@@ -62,5 +62,5 @@
   
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Veri%20Kaydetme) [SD CARD]
   
-  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [OLED]
+  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [SSD1306]
   
