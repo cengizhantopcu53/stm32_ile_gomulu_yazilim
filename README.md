@@ -12,7 +12,7 @@
 #### 10 SPI
 
 #### Uygulamalar
-  - [01_01 Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_01%20Harici%20Led%20Yakma) [HAL, REGISTER]
+  - [01_01 Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_01%20Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
   - [01_02 Buton ile Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_02%20Buton%20ile%20Led%20Yakma) [HAL, REGISTER]
   - [02_01 External Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/03_01%20External%20Interrupt) [HAL, REGISTER]
   - [03_01 ADC Verisi Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/04_01%20ADC%20Verisi%20Okuma) [HAL, REGISTER]
