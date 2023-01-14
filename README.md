@@ -10,6 +10,7 @@
 #### 08 USART  
 #### 09 I2C
 #### 10 SPI
+#### 11 CAN
 
 #### Uygulamalar
   - [01_01 Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/02_01%20Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
@@ -26,6 +27,7 @@
   - [08_01 USART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/09_01%20USART%20ile%20Mesaj%20G%C3%B6nderme) [HAL, SPL, REGISTER]
   - [09_01 I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
   - [10_01 SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20SPI%20Kullan%C4%B1m%C4%B1) [HAL]
+  - [11_01 CAN Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20CAN%20Kullan%C4%B1m%C4%B1) [HAL]
   
 #### Projeler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [ADXL345, MPU6050]
@@ -36,5 +38,5 @@
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [SSD1306]
 
 ##
-***STM32 işlemci üzerinden C dili ile çevre birimleri (ADC, DAC, TIMER, PWM) ve haberleşme protokolleri (UART, I2C, SPI) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
+***STM32 işlemci üzerinden C dili ile çevre birimleri (ADC, DAC, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, CAN) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
 ##
