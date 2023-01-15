@@ -38,5 +38,5 @@
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [SSD1306]
 
 ##
-***STM32 işlemci üzerinden C dili ile çevre birimleri (ADC, DAC, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, CAN) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
+***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, CAN) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
 ##
