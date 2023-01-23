@@ -36,7 +36,7 @@
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Konum%20Bilgisi) [NEO6M]
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Veri%20Kaydetme) [SD CARD]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [SSD1306]
-  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Surme) [L298N]
+  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Sürme) [L298N]
   - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Sinyal%20Okuma) [ENCODER]
 
 ##
