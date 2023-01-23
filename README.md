@@ -30,10 +30,12 @@
 #### Projeler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [ADXL345, MPU6050]
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
-  - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Kablosuz%20Haberlesme) [LORA, NRF24]
+  - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Konum%20Bilgisi) [NEO6M]
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Veri%20Kaydetme) [SD CARD]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [SSD1306]
+  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Surme) [L298N]
+  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Surme) [ENCODER]
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (ADC, DAC, TIMER, PWM) ve haberleşme protokolleri (UART, I2C, SPI) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
