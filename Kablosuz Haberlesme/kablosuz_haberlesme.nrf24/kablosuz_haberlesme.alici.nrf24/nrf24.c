@@ -290,8 +290,8 @@ bool NRF24_write( const void* buf, uint8_t len )
   }
   while( ! ( status & ( _BV(BIT_TX_DS) | _BV(BIT_MAX_RT) ) ) && ( HAL_GetTick() - sent_at < timeout ) );
 	
-//	printConfigReg();
-//	printStatusReg();
+//printConfigReg();
+//printStatusReg();
 	
 	bool tx_ok, tx_fail;
   NRF24_whatHappened(&tx_ok,&tx_fail, &ack_payload_available);

@@ -22,11 +22,11 @@ References:				This library was written based on the Arduino NRF24 Open-Source l
 #include "string.h"
 #include "stm32f4xx_hal.h"
 
-#define nrf_CSN_PORT	GPIOA
-#define nrf_CSN_PIN		GPIO_PIN_3
+#define nrf_CSN_PORT	GPIOB
+#define nrf_CSN_PIN		GPIO_PIN_9
 
-#define nrf_CE_PORT		GPIOA
-#define nrf_CE_PIN		GPIO_PIN_4
+#define nrf_CE_PORT		GPIOB
+#define nrf_CE_PIN		GPIO_PIN_8
 
 //List of header files 
 #define _BV(x) (1<<(x))
