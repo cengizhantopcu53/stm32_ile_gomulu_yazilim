@@ -30,7 +30,7 @@
   - [11_01 CAN Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/10_01%20CAN%20Kullan%C4%B1m%C4%B1) [HAL]
   
 #### Projeler
-  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [ADXL345, MPU6050]
+  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Konum%20Bilgisi) [NEO6M]
