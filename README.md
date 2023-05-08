@@ -37,7 +37,7 @@
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Veri%20Kaydetme) [SD CARD]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, SSD1306]
   - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Sürme) [L298N]
-  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD, MEMBRAN]
+  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, CAN) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
