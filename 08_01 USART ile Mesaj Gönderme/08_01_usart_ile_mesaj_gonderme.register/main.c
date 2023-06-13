@@ -2,7 +2,7 @@
 #include "string.h"
 
 char Rx_Buff[100];
-int=0;
+int i=0;
 
 void RCC_Config(void)
 {
