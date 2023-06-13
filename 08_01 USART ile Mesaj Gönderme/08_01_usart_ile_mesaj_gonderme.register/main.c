@@ -27,7 +27,7 @@ void RCC_Config(void)
 
 void GPIO_Config(void)
 {
-	RCC->AHB1ENR |= 0x00000002;            //B clock enable
+    RCC->AHB1ENR |= 0x00000002;            //B clock enable
 
     GPIOB->MODER |= 0x00A00000;            //PA10, PA11 Alternate function mode
     GPIOB->AFR[1] |= 7 << 8 | 7 << 12;     //USART3 AFRH10, AFRH11
@@ -37,7 +37,7 @@ void USART_Config(void)
 {
 	RCC->APB1ENR |= 1 << 18;               //USART3EN
 
-	USART3->BRR |= BRR(9600);              //BaudRate 9600
+	USART3->BRR = BRR(9600);               //BaudRate 9600
 	USART3->CR1 |= (1 << 2);               //Receiver Enable
 	USART3->CR1 |= (1 << 3);               //Transmitter Enable
 	USART3->CR1 |= (1 << 5);               //RXNE Interrupt Enable
