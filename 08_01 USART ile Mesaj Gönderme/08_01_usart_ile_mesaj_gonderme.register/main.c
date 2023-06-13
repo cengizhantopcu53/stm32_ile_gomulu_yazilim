@@ -37,7 +37,7 @@ void USART_Config(void)
 {
 	RCC->APB1ENR |= 1 << 18;               //USART3EN
 
-	USART3->BRR |= 0X1112;                 //BaudRate 9600
+	USART3->BRR |= BRR(9600);              //BaudRate 9600
 	USART3->CR1 |= (1 << 2);               //Receiver Enable
 	USART3->CR1 |= (1 << 3);               //Transmitter Enable
 	USART3->CR1 |= (1 << 5);               //RXNE Interrupt Enable
@@ -71,6 +71,16 @@ void Send_Message(char *Str)
 		Send_Char(*Str);
 		Str;
 	}
+}
+
+int BRR(double baud)
+{
+	double decimal = (42*1000000)/(baud*16);
+
+	int Mantissa = (int)decimal;
+	int Fraction = ceil((decimal-Mantissa)*16);
+
+	return ((Mantissa << 4) + Fraction);
 }
 
 int main(void)
