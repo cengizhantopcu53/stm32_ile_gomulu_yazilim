@@ -37,7 +37,7 @@ void USART_Config(void)
 {
 	RCC->APB1ENR |= 1 << 18;               //USART3EN
 
-	USART3->BRR = BRR(9600);               //BaudRate 9600
+	USART3->BRR |= 0x1117;                 //BaudRate 9600
 	USART3->CR1 |= (1 << 2);               //Receiver Enable
 	USART3->CR1 |= (1 << 3);               //Transmitter Enable
 	USART3->CR1 |= (1 << 5);               //RXNE Interrupt Enable
