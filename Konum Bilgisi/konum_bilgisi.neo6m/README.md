@@ -1,5 +1,5 @@
 
-# konum Bilgisi
+# Konum Bilgisi
 
 > ## **NEO6M**
 
