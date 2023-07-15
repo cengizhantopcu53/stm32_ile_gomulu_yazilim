@@ -4,7 +4,7 @@
 > ## **NTC**
 
 ## Giriş
-Örnek uygulamamızı [linkteki](https://www.youtube.com/watch?v=IaQdL_WJaQs) videodan referans alarak yapıyoruz.<br>
+Örnek uygulamamızı [linkteki](https://youtu.be/4DsScjJ3h_I) videodan referans alarak yapıyoruz.<br>
 İsterseniz [makaleden]( https://milisaniye.home.blog/2020/10/05/stm32-neo-6m-gps-uygulamasi/) yararlanabilirsiniz. Kullanılan kütüphaneye [linkten](https://github.com/leech001/gps/blob/master/src/gps.c) ulaşabilrisiniz.<br>
 [Link](http://aprs.gids.nl/nmea/) üzerinden NMEA protokolün $GPxxxx ile başlayan 19 farklı veri kodu hakkında bilgi alabiliriz.<br>
 Kullanılan kütüphanelerde GPS çalıştırırken Interrupt aktif edilmesi gerekir.
@@ -31,7 +31,7 @@ GPGGA veri kodu hakkında bilgi edinmek için [birinci](https://ozcanfatih.wordp
 ## Konfigürasyon Kısmı
 <img src="image/image-1.png" width="350"> <br>
 <img src="image/image-2.png" width="550"> <br>
-USART1 için Asynchronous seçimi yapılır. Baude Rate 9600 seçilir. 
+USART1 için Asynchronous seçimi yapılır. Baude Rate 9600 seçilir. <br>
 <img src="image/image-3.png" width="350"> <br>
 GPS, Interrupt ile kullanıldığından USART1 için NVIC Settings kısmından İnterrupt Enabled yapılır.<br>
 <img src="image/image-4.png" width="550"> 
