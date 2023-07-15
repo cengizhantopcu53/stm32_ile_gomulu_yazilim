@@ -1,7 +1,7 @@
 
-# Sıcaklık Ölçümü
+# Konum Bilgisi
 
-> ## **NTC**
+> ## **NEO6M**
 
 ## Giriş
 Örnek uygulamamızı [linkteki](https://youtu.be/4DsScjJ3h_I) videodan referans alarak yapıyoruz.<br>
