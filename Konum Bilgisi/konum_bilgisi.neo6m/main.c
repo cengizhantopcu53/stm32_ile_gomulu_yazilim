@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2022 STMicroelectronics.
+  * Copyright (c) 2023 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "gps.h"
+#include "lwgps/lwgps.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,9 +55,24 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+lwgps_t gps;
+
+uint8_t rx_buffer[128];
+uint8_t rx_index = 0;
+uint8_t rx_data = 0;
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	  GPS_CallBack();
+	if(huart == &huart1) {
+		if(rx_data != '\n' && rx_index < sizeof(rx_buffer)) {
+			rx_buffer[rx_index++] = rx_data;
+		} else {
+			lwgps_process(&gps, rx_buffer, rx_index+1);
+			rx_index = 0;
+			rx_data = 0;
+		}
+		HAL_UART_Receive_IT(&huart1, &rx_data, 1);
+	}
 }
 /* USER CODE END 0 */
 
@@ -91,7 +106,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  lwgps_init(&gps);
+  HAL_UART_Receive_IT(&huart1, &rx_data, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,8 +117,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  GPS_Process();
-	  HAL_Delay(500);
+	  enlem = gps.latitude;
+	  boylam = gps.longitude;
+      HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
@@ -119,7 +136,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -190,7 +207,6 @@ static void MX_GPIO_Init(void)
 {
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
 }
