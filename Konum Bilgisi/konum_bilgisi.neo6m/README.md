@@ -38,11 +38,9 @@ GPS, Interrupt ile kullanıldığından USART1 için NVIC Settings kısmından �
 
 
 ## Kod Kısmı
-Gps kütüphanesi için gerekli kütüphaneleri ekliyoruz. <br>
-Lwgps dosyası içerisinde lwgps.h, lwgps_opt.h ve lwgps_opts.h dosyalarını içeriyor. Bu dosyalar Inc klasörü içerisine ekliyoruz. Lwgps.c kütüphanesini Src klasörüne ekliyoruz.<br>
+Gps kütüphanesi için gerekli kütüphaneleri ekliyoruz. Lwgps dosyası içerisinde lwgps.h, lwgps_opt.h ve lwgps_opts.h dosyalarını içeriyor. Bu dosyalar Inc klasörü içerisine ekliyoruz. Lwgps.c kütüphanesini Src klasörüne ekliyoruz.<br>
 Daha sonra main.c dosyasına  lwgps.h dosyasını ekliyoruz.<br>
 <img src="image/image-5.png" width="150"> <br>
-Daha sonra gps için lwgps.h dosyasını ekliyoruz.<br>
 <img src="image/image-6.png" width="200"> <br>
 <img src="image/image-7.png" width="200"> <br>
 <img src="image/image-8.png" width="450"> <br>
