@@ -46,9 +46,6 @@
   - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Motor%20Sürme) [L298N]
   - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Sıcaklık%20Ölçüm) [NTC]
 
-#### Kod Örnekleri
-  - [Bit Shifting](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Bit%20Shifting/bit_shifting)
-
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, CAN) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz.***
 ##
