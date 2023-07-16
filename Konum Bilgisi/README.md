@@ -25,7 +25,7 @@ GPGGA veri kodu hakkında bilgi edinmek için [birinci](https://ozcanfatih.wordp
 12. ve 13. veri geoit değerinim verisini ve hangi birimde olduğunun bilgisini verir.<br>
 14. veri ile verinin düzeltme yaşını verir. 1-99 arasında değer alır.<br>
 15. veri diferansiyel referans istasyon ID değerini verir.<br>
-16. veri * işareti ile birlikte checksum değerini verir.<br>
+16. veri * işareti ile birlikte checksum değerini verir.
 
 
 ## Konfigürasyon Kısmı
@@ -47,7 +47,7 @@ Daha sonra main.c dosyasına  lwgps.h dosyasını ekliyoruz.<br>
 <img src="image/image-9.png" width="350"> <br>
 <img src="image/image-10.png" width="250"> <br>
 
-Eğer gps.h ve gps.c kütüphanesini kullanmak istersek konfigürasyon kısmında değişiklik yapmadan main.c dosyasını aşağıdaki gibi düzeltilir.
+Eğer gps.h ve gps.c kütüphanesini kullanmak istersek konfigürasyon kısmında bir değişiklik yapmadan main.c dosyasını aşağıdaki gibi düzeltiliriz.
 ```c
 #include "main.h"
 #include "gps.h"
