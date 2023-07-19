@@ -47,42 +47,7 @@ Daha sonra main.c dosyasına  lwgps.h dosyasını ekliyoruz.<br>
 <img src="image/image-9.png" width="350"> <br>
 <img src="image/image-10.png" width="250"> <br>
 
-Eğer gps.h ve gps.c kütüphanesini kullanmak istersek konfigürasyon kısmında bir değişiklik yapmadan main.c dosyasını aşağıdaki gibi düzeltiliriz.
-```c
-#include "main.h"
-#include "gps.h"
-
-UART_HandleTypeDef huart1;
-
-float enlem, boylam;
-
-void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-static void MX_USART1_UART_Init(void);
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-	  GPS_CallBack();
-}
-
-int main(void)
-{
-  HAL_Init();
-
-  SystemClock_Config();
-
-  MX_GPIO_Init();
-  MX_USART1_UART_Init();
-
-  GPS_Init();
-
-  while (1)
-  {
-      GPS_Process();
-      HAL_Delay(500);
-  }
-}
-``` 
+Eğer gps.h ve gps.c kütüphanesini kullanmak istersek konfigürasyon kısmında bir değişiklik yapmadan main.c dosyasında yine benzer yapılar kullanarak çalıştırabiliriz.
 
 ---
 <br>
