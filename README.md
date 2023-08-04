@@ -7,7 +7,7 @@
 #### 05 DMA
 #### 06 TIMER
 #### 07 PWM
-#### 08 USART  
+#### 08 UART  
 #### 09 I2C
 #### 10 SPI
 
@@ -24,7 +24,7 @@
   - [Timer Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Timer%20Interrupt) [HAL]
   - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Timer%20ile%20Delay%20Oluşturma) [HAL]
   - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/PWM%20Kullanımı) [HAL, SPL, REGISTER]
-  - [USART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/USART%20ile%20Mesaj%20Gönderme) [HAL, SPL, REGISTER]
+  - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/UART%20ile%20Mesaj%20Gönderme) [HAL, SPL, REGISTER]
   - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/I2C%20Kullanımı) [SPL, REGISTER]
   - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/SPI%20Kullanımı) [HAL]
   
