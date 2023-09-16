@@ -8,8 +8,8 @@
 #### 06 TIMER
 #### 07 PWM
 #### 08 UART  
-#### 09 I2C
-#### 10 SPI
+#### 09 SPI
+#### 10 I2C
 
 #### Uygulamalar
   - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
@@ -25,19 +25,19 @@
   - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20ile%20Delay%20Olu%C5%9Fturma/timer_ile_delay_olusturma.hal) [HAL]
   - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/PWM%20Kullan%C4%B1m%C4%B1) [HAL, SPL, REGISTER]
   - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20G%C3%B6nderme) [HAL, SPL, REGISTER]
-  - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
   - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/SPI%20Kullan%C4%B1m%C4%B1/spi_kullanimi.hal) [HAL]
+  - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
   
 #### Projeler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
-  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
-  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, SSD1306]
+  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Konum%20Bilgisi) [NEO6M]
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Veri%20Kaydetme/veri_kaydetme.sdcard) [SD CARD]
+  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
+  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
   - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Motor%20S%C3%BCrme/motor_surme.l298n) [L298N]
-  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz. Bu alanda çalışan arakdaşlara yardımcı olması adına [linkte](https://github.com/atalayroket/atalay_gomuluyazilim) komponentlerin kütüphaneleri paylaşılmıştır.***
