@@ -1,4 +1,4 @@
-![image](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/assets/64609951/82f79594-b5f9-4431-9b08-fd0884fab9ff)# STM32 ile Gömülü Yazılım
+# STM32 ile Gömülü Yazılım
 
 #### 01 GPIO 
 #### 02 EXTI
