@@ -1,1 +1,0 @@
-# Arayuz ile Test Etme

@@ -33,6 +33,7 @@
 #### Projeler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
+  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [C#]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, SSD1306, 7 SEGMENT, NEXTION]
   - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Veri%20Kaydetme/veri_kaydetme.sdcard) [SD CARD]
