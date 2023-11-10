@@ -42,6 +42,19 @@
 
 /* USER CODE BEGIN PV */
 uint8_t count=0;
+
+uint8_t segmentNumber[10]= {
+        0x3F, //0
+        0x06, //1 
+        0x5B, //2 
+        0x4F, //3 
+        0x66, //4  
+        0x6D, //5 
+        0x7D, //6 
+        0x07, //7 
+        0x7F, //8 
+        0x67  //9
+};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -116,7 +129,18 @@ int main(void)
 		  count = 9;
 	  }
 
-	  displayNumber(count);
+	  //displayNumber(count);
+    SevenSegment_Update(segmentNumber[count])
+    {
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4,  ~((count>>0) & 0x01)); //1
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5,  ~((count>>1) & 0x01)); //2
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6,  ~((count>>2) & 0x01)); //3
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7,  ~((count>>3) & 0x01)); //4
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, ~((count>>4) & 0x01)); //5
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, ~((count>>5) & 0x01)); //6
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, ~((count>>6) & 0x01)); //7
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET); //8
+    }
   }
   /* USER CODE END 3 */
 }
