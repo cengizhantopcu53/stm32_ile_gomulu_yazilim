@@ -41,7 +41,7 @@
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Veri%20Kaydetme) [SD CARD]
   - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Konum%20Bilgisi) [NEO6M]
-  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Motor%20S%C3%BCrme/motor_surme.l298n) [L298N]
+  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Motor%20S%C3%BCrme) [L298N]
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
 
 ##
