@@ -1,16 +1,17 @@
 # STM32 ile Gömülü Yazılım
 
-#### 01 GPIO 
-#### 02 EXTI
-#### 03 ADC 
-#### 04 DAC 
-#### 05 DMA
-#### 06 TIMER
-#### 07 PWM
-#### 08 UART  
-#### 09 SPI
-#### 10 I2C
-#### 11 USB
+#### Konular
+  - [01 GPIO]()
+  - [02 EXTI]()
+  - [03 ADC]()
+  - [04 DAC]()
+  - [05 DMA]()
+  - [06 TIMER]()
+  - [07 PWM]()
+  - [08 UART]()
+  - [09 SPI]()
+  - [10 I2C]()
+  - [11 USB]()
 
 #### Uygulamalar
   - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
@@ -26,15 +27,16 @@
   - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20ile%20Delay%20Olu%C5%9Fturma/timer_ile_delay_olusturma.hal) [HAL]
   - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/PWM%20Kullan%C4%B1m%C4%B1) [HAL, SPL, REGISTER]
   - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20G%C3%B6nderme) [HAL, SPL, REGISTER]
+  - [RS485 Kullanimi]() [HAL]
   - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/SPI%20Kullan%C4%B1m%C4%B1/spi_kullanimi.hal) [HAL]
   - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
   - [USB ile Sanal Port Kullanımı]() [HAL]
   
-#### Projeler
+#### Örnekler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
-  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/ArayuzileTestEtme) [C#]
-  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, SSD1306, 7 SEGMENT, NEXTION]
+  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/ArayuzileTestEtme) [C#, MATLAB]
+  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Ekran%20Kullan%C4%B1m%C4%B1) [7 SEGMENT, LCD, NEXTION, SSD1306]
   - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
   - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Veri%20Kaydetme/veri_kaydetme.sdcard) [SD CARD]
   - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]

@@ -18,10 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "mpu6050.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "adxl345.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,18 +55,7 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t Data;
 
-int16_t RAWgyroX;
-int16_t RAWgyroY;
-int16_t RAWgyroZ;
-
-int16_t RAWaccelX;
-int16_t RAWaccelY;
-int16_t RAWaccelZ;
-
-float Ax, Ay, Az;
-float Gx, Gy, Gz;
 /* USER CODE END 0 */
 
 /**
@@ -99,8 +88,8 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  MPU6050_ScanAdress();
-  MPU6050_Init();
+  ADXL345_ScanAdress();
+  ADXL345_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,10 +99,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_GyroRead();
-	  MPU6050_AccelRead();
+	  ADXL345_AccelRead();
 	  HAL_Delay(1000);
-
   }
   /* USER CODE END 3 */
 }

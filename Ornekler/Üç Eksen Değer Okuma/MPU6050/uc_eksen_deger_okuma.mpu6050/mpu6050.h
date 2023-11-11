@@ -1,4 +1,4 @@
-#ifndef INC_MPU6050_H_
+	#ifndef INC_MPU6050_H_
 #define INC_MPU6050_H_
 
 #include "stdint.h"
@@ -41,8 +41,6 @@ extern  I2C_HandleTypeDef hi2c1;
 #define MPU_REG_FIFO_R_W			0x74
 #define MPU_REG_WHO_AM_I			0x75
 
-extern uint8_t Data;
-
 typedef enum {
 	FS_250 = 0,
 	FS_500 = 1,
@@ -56,17 +54,6 @@ typedef enum {
 	AFS_8G = 2,
 	AFS_16G = 3
 }afs_sel;
-
-extern int16_t RAWgyroX;
-extern int16_t RAWgyroY;
-extern int16_t RAWgyroZ;
-
-extern int16_t RAWaccelX;
-extern int16_t RAWaccelY;
-extern int16_t RAWaccelZ;
-
-extern float Ax, Ay, Az;
-extern float Gx, Gy, Gz;
 
 void MPU6050_ScanAdress(void);
 void MPU6050_Init(void);

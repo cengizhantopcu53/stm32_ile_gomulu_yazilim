@@ -1,5 +1,13 @@
 #include "mpu6050.h"
 
+extern float Ax, Ay, Az;
+extern float Gx, Gy, Gz;
+
+uint8_t Data;
+
+int16_t RAWgyroX,RAWgyroY,RAWgyroZ;
+int16_t RAWaccelX,RAWaccelY,RAWaccelZ;
+
 void MPU6050_ScanAdress(void)
 {
 	for(int i=0; i<=255; i++)

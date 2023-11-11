@@ -6,13 +6,12 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2023 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -22,7 +21,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define ADXL345_ADDRESS 0xA6    //0x53<<1
+#include "mpu6050.h"
+#include "math.h"
+#include "stdio.h"
+#include "string.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,6 +34,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define PI 3.14159265359
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -40,29 +43,38 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-I2C_HandleTypeDef hi2c1;
+ I2C_HandleTypeDef hi2c1;
+
+UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint8_t myDatas[6];
-int16_t x,y,z;
-float xg, yg, zg;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
+static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-void ADXL345_ScanAdress();
-void ADXL345_Init();
-void ADXL345_Write(uint8_t rRegister, uint8_t value);
-void ADXL345_Read(uint8_t rRegister, uint8_t numberOfBytes);
-void ADXL345_AccelRead();
+void MPU6050_Offset(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+char buffer[50];
 
+float Ax, Ay, Az;
+float Gx, Gy, Gz;
+
+float AccelRoll, AccelPitch;
+float GyroRoll, GyroPitch, GyroYaw;
+float Roll, Pitch, Yaw;
+
+float AccelRollError, AccelPitchError;
+float GyroRollError, GyroPitchError, GyroYawError;
+
+float elapsedTime, currentTime, previousTime;
 /* USER CODE END 0 */
 
 /**
@@ -94,9 +106,11 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-  ADXL345_ScanAdress();
-  ADXL345_Init();
+  MPU6050_ScanAdress();
+  MPU6050_Init();
+  MPU6050_Offset();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,7 +120,34 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  ADXL345_AccelRead();
+	  //Accel
+	  MPU6050_AccelRead();
+
+	  AccelRoll = (atan(Ay / sqrt(pow(Ax, 2) + pow(Az, 2))) * 180 / PI) - AccelRollError;
+	  AccelPitch = (atan(-1 * Ax / sqrt(pow(Ay, 2) + pow(Az, 2))) * 180 / PI) - AccelPitchError;
+
+	  //Gyro
+	  previousTime = currentTime;
+	  currentTime = HAL_GetTick();
+	  elapsedTime = (currentTime - previousTime) / 1000;
+
+	  MPU6050_GyroRead();
+
+	  Gx = Gx - GyroRollError;
+	  Gy = Gy - GyroPitchError;
+	  Gz = Gz - GyroYawError;
+
+	  GyroRoll = GyroRoll + Gx * elapsedTime;
+	  GyroPitch = GyroPitch + Gy * elapsedTime;
+	  GyroYaw =  GyroYaw + Gz * elapsedTime;
+
+	  //Roll, Pitch, Yaw
+	  Roll = 0.96 * GyroRoll + 0.04 * AccelRoll;
+	  Pitch = 0.96 * GyroPitch + 0.04 * AccelPitch;
+	  Yaw = GyroYaw;
+
+	  sprintf(buffer,"%.2f*%.2f*%.2f\n", Roll, Pitch, Yaw);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), 100);
 	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
@@ -124,39 +165,30 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 180;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 2;
-  RCC_OscInitStruct.PLL.PLLR = 2;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
   }
-  /** Activate the Over-Drive mode
-  */
-  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
-  {
-    Error_Handler();
-  }
+
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -178,7 +210,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 400000;
+  hi2c1.Init.ClockSpeed = 100000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
@@ -193,6 +225,39 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 2 */
 
   /* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+  * @brief USART2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART2_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART2_Init 0 */
+
+  /* USER CODE END USART2_Init 0 */
+
+  /* USER CODE BEGIN USART2_Init 1 */
+
+  /* USER CODE END USART2_Init 1 */
+  huart2.Instance = USART2;
+  huart2.Init.BaudRate = 9600;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART2_Init 2 */
+
+  /* USER CODE END USART2_Init 2 */
 
 }
 
@@ -212,48 +277,35 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void ADXL345_ScanAdress()
+void MPU6050_Offset(void)
 {
-	for(int i=0; i<=255; i++)
-	{
-		if(HAL_I2C_IsDeviceReady(&hi2c1, i, 1, 10) == HAL_OK)
-			break;
+	int c = 0;
+
+	//Accel
+	while(c < 2000){
+		MPU6050_AccelRead();
+		AccelRollError = AccelRollError + (atan(Ay / sqrt(pow(Ax, 2) + pow(Az, 2))) * 180 / PI);
+		AccelPitchError = AccelPitchError + (atan(-1 * Ax / sqrt(pow(Ay, 2) + pow(Az, 2))) * 180 / PI);
+		c++;
 	}
-}
+	HAL_Delay(3);
+	AccelRollError = AccelRollError / 2000;
+	AccelPitchError = AccelPitchError / 2000;
+	c = 0;
 
-void ADXL345_Init()
-{
-	ADXL345_Read(0x00, 1);
-	ADXL345_Write(0x2D, 0);
-	ADXL345_Write(0x2D, 0x08);      //Measure Bit SET
-	ADXL345_Write(0x31, 0x01);      //Range Bit +-4g
-}
-
-void ADXL345_Write(uint8_t rRegister, uint8_t value)
-{
-	uint8_t data[2] = {0};
-	data[0] = rRegister;
-	data[1] = value;
-
-	HAL_I2C_Master_Transmit(&hi2c1, ADXL345_ADDRESS, data, 2, 100);
-}
-
-void ADXL345_Read(uint8_t rRegister, uint8_t numberOfBytes)
-{
-	HAL_I2C_Mem_Read(&hi2c1, ADXL345_ADDRESS, rRegister, 1, myDatas, numberOfBytes, 100);
-}
-
-void ADXL345_AccelRead()
-{
-	 ADXL345_Read(0x32, 6);
-
-	 x= (myDatas[1] << 8) | myDatas[0];
-	 y= (myDatas[3] << 8) | myDatas[2];
-	 z= (myDatas[5] << 8) | myDatas[4];
-
-	 xg = x * .0078;
-	 yg = y * .0078;
-	 zg = z * .0078;
+	//Gyro
+	while(c < 2000){
+		MPU6050_GyroRead();
+		GyroRollError = GyroRollError + Gx;
+		GyroPitchError = GyroPitchError + Gy ;
+		GyroYawError =  GyroYawError + Gz;
+		c++;
+	}
+	HAL_Delay(3);
+	GyroRollError = GyroRollError / 2000;
+	GyroPitchError = GyroPitchError / 2000;
+	GyroYawError =  GyroYawError / 2000;
+	HAL_Delay(100);
 }
 /* USER CODE END 4 */
 
@@ -288,5 +340,3 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
