@@ -11,7 +11,6 @@
   - [08 UART](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/08%20UART.pdf)
   - [09 SPI](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/09%20SPI.pdf)
   - [10 I2C](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/10%20I2C.pdf)
-  - [11 USB](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/11%20USB.pdf)
 
 #### Uygulamalar
   - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
@@ -29,13 +28,12 @@
   - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20G%C3%B6nderme) [HAL, SPL, REGISTER]
   - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/SPI%20Kullan%C4%B1m%C4%B1/spi_kullanimi.hal) [HAL]
   - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
-  - [USB ile Sanal Port Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/USB%20ile%20Sanal%20Port%20Kullan%C4%B1m%C4%B1) [HAL]
   
 #### Örnekler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Kablosuz%20Haberlesme) [LORA, NRF24]
   - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, NEXTION]
-  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER, JOYSTICK]
+  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER]
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
   - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
   - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/ArayuzileTestEtme) [C#]
