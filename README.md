@@ -22,7 +22,7 @@
   - [ADC Değeri İle DAC Kontrolü](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu) [HAL]
   - [DMA ile ADC Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DMA%20ile%20ADC%20Deger%20Okuma) [HAL, SPL, REGISTER]
   - [Timer Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Deger%20Okuma) [SPL, REGISTER]
-  - [Timer Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Interrupt/timer_interrupt.hal) [HAL]
+  - [Timer Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Interrupt) [HAL]
   - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20ile%20Delay%20Olusturma) [HAL]
   - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/PWM%20Kullanimi) [HAL, SPL, REGISTER]
   - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20Gonderme) [HAL, SPL, REGISTER]
