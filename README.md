@@ -30,15 +30,15 @@
   - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullan%C4%B1m%C4%B1) [SPL, REGISTER]
   
 #### Örnekler
-  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
+  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Uc%20Eksen%20Deger%20Okuma) [MPU6050, ADXL345]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Kablosuz%20Haberlesme) [LORA, NRF24]
-  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Ekran%20Kullan%C4%B1m%C4%B1) [LCD, NEXTION]
+  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Ekran%20Kullanimi) [LCD, NEXTION]
   - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER]
-  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
-  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
-  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/ArayuzileTestEtme) [C#]
+  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Irtifa%20Olcum) [BMP180, BME280]
+  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sicaklik%20Olcum) [NTC]
+  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Arayuz%20ile%20Test%20Etme) [C#]
   - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Konum%20Bilgisi) [NEO6M]
-  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Motor%20S%C3%BCrme) [L298N]
+  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Motor%20Surme) [L298N]
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz. Bu alanda çalışan arakdaşlara yardımcı olması adına [linkte](https://github.com/atalayroket/atalay_gomuluyazilim) komponentlerin kütüphaneleri paylaşılmıştır.***
