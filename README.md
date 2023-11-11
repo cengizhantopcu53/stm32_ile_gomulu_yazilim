@@ -33,16 +33,16 @@
   - [USB ile Sanal Port Kullanımı]() [HAL]
   
 #### Örnekler
-  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
-  - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
-  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/ArayuzileTestEtme) [C#, MATLAB]
-  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Ekran%20Kullan%C4%B1m%C4%B1) [7 SEGMENT, LCD, NEXTION, SSD1306]
-  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
-  - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Veri%20Kaydetme/veri_kaydetme.sdcard) [SD CARD]
-  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
-  - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Konum%20Bilgisi) [NEO6M]
-  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/Motor%20S%C3%BCrme/motor_surme.l298n) [L298N]
-  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Projeler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
+  - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C3%9C%C3%A7%20Eksen%20De%C4%9Fer%20Okuma) [MPU6050, ADXL345]
+  - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Kablosuz%20Haberlesme) [LORA, NRF24, HC06]
+  - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/ArayuzileTestEtme) [C#, MATLAB]
+  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Ekran%20Kullan%C4%B1m%C4%B1) [7 SEGMENT, LCD, NEXTION, SSD1306]
+  - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/S%C4%B1cakl%C4%B1k%20%C3%96l%C3%A7%C3%BCm) [NTC]
+  - [Veri Kaydetme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Veri%20Kaydetme/veri_kaydetme.sdcard) [SD CARD]
+  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER, JOYSTICK, KEYPAD]
+  - [Konum Bilgisi](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Konum%20Bilgisi) [NEO6M]
+  - [Motor Sürme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Motor%20S%C3%BCrme/motor_surme.l298n) [L298N]
+  - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/%C4%B0rtifa%20%C3%96l%C3%A7%C3%BCm) [BMP180, BME280]
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI) kullanarak yapılan uygulamalar ve projeler ile ilgili yazılara [linkten](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz. Bu alanda çalışan arakdaşlara yardımcı olması adına [linkte](https://github.com/atalayroket/atalay_gomuluyazilim) komponentlerin kütüphaneleri paylaşılmıştır.***
