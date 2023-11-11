@@ -42,12 +42,6 @@ int main(void)
 • https://youtu.be/vtI6Wd7DogQ linkteki videoyu izleyerek konuya giriş yapabiliriz. Yapılmış örnek çalışmalara https://maker.robotistan.com/kategori/arduino/arduino-c-sharp-projeleri/ linkten ulaşabiliriz. Bu konuda daha ayrıntılı bilgi almak için https://www.youtube.com/playlist?list=PLT19xuXjmpJTbKhcx3sBpgcf6sAIbAtPt , https://www.youtube.com/playlist?list=PLre4S1H8v3bSKyBpziWr_gcYMuA3iiO7Y ile https://www.youtube.com/playlist?list=PL33a8qXOY4kfskfUr_4BnrzFu1znytMOb linklerdeki oynatma listesine eğer kurs olarak izlemek isterseniz https://www.udemy.com/course/stm32-programlama-ve-c-uzerinde-test-etme/ linke bakabilirsiniz.
 • https://koddefteri.net/c-sharp/c-sharp-ile-seri-port-kullanimi.html , https://mustafabukulmez.com/2021/05/06/c-seri-port-rs232-veri-okuma/ ve https://www.kaizen40.com/c-seri-port-oku-yaz/ linkteki makaleleri okuyabiliriz.
 
-
-## Teori
-
-## Kod Kısmı
-
-
 ---
 
 <br>
