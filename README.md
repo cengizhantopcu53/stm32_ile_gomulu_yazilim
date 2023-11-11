@@ -1,17 +1,17 @@
 # STM32 ile Gömülü Yazılım
 
 #### Konular
-  - [01 GPIO]()
-  - [02 EXTI]()
-  - [03 ADC]()
-  - [04 DAC]()
-  - [05 DMA]()
-  - [06 TIMER]()
-  - [07 PWM]()
-  - [08 UART]()
-  - [09 SPI]()
-  - [10 I2C]()
-  - [11 USB]()
+  - [01 GPIO](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/01%20GPIO.pdf)
+  - [02 EXTI](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/02%20EXTI.pdf)
+  - [03 ADC](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/03%20ADC.pdf)
+  - [04 DAC](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/04%20DAC.pdf)
+  - [05 DMA](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/05%20DMA.pdf)
+  - [06 TIMER](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/06%20TIMER.pdf)
+  - [07 PWM](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/07%20PWM.pdf)
+  - [08 UART](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/08%20UART.pdf)
+  - [09 SPI](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/09%20SPI.pdf)
+  - [10 I2C](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/10%20I2C.pdf)
+  - [11 USB](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/11%20USB.pdf)
 
 #### Uygulamalar
   - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
