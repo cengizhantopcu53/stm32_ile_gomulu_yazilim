@@ -50,20 +50,4 @@ int main(void)
 
 ---
 
-
-> ## **MATLAB**
-
-## Giriş
-
-• https://www.mathworks.com/help/matlab/ref/serialport.html#mw_b5492b6b-bb1c-409b-a54d-effbd128452b link üzerineden Matlab üzerinden haberleşme yapabilmek için gerekli komutlara ulaşabiliriz.
-https://youtu.be/2j-jgBo9Xmo?si=6rR0VGA_iEOH0LgM ile https://youtu.be/NnLxS9_0QzU?si=0ri264dp21Qom0ph linkten örnek uygulamayı inceleyebiliriz.
-
-
-## Teori
-
-
-## Kod Kısmı
-
----
-
 <br>
