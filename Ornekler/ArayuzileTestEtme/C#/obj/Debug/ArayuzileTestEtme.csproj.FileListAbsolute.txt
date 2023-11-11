@@ -1,0 +1,10 @@
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\bin\Debug\ArayuzileTestEtme.exe.config
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\bin\Debug\ArayuzileTestEtme.exe
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\bin\Debug\ArayuzileTestEtme.pdb
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.csproj.AssemblyReference.cache
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.Form1.resources
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.Properties.Resources.resources
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.csproj.GenerateResource.cache
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.csproj.CoreCompileInputs.cache
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.exe
+C:\Users\cengi\Documents\GitHub\stm32_ile_gomulu_yazilim\Ornekler\ArayuzileTestEtme\C#\obj\Debug\ArayuzileTestEtme.pdb
