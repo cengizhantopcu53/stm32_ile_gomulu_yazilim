@@ -17,7 +17,7 @@
   - [Buton ile Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Buton%20ile%20Led%20Yakma) [HAL, SPL, REGISTER]
   - [External Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/External%20Interrupt) [HAL, SPL, REGISTER]
   - [ADC Verisi Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Verisi%20Okuma) [HAL, SPL, REGISTER]
-  - [ADC Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Interrupt/adc_interrupt.hal) [HAL]
+  - [ADC Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Interrupt) [HAL]
   - [DAC Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DAC%20Kullanimi) [HAL, SPL, REGISTER]
   - [ADC Değeri İle DAC Kontrolü](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu) [HAL]
   - [DMA ile ADC Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DMA%20ile%20ADC%20Deger%20Okuma) [HAL, SPL, REGISTER]
