@@ -13,21 +13,19 @@
   - [10 I2C](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/Konular/10%20I2C.pdf)
 
 #### Uygulamalar
-  - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) [HAL, SPL, REGISTER]
-  - [Buton ile Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Buton%20ile%20Led%20Yakma) [HAL, SPL, REGISTER]
-  - [External Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/External%20Interrupt) [HAL, SPL, REGISTER]
-  - [ADC Verisi Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Verisi%20Okuma) [HAL, SPL, REGISTER]
-  - [ADC Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Interrupt) [HAL]
-  - [DAC Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DAC%20Kullanimi) [HAL, SPL, REGISTER]
-  - [ADC Değeri İle DAC Kontrolü](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu) [HAL]
-  - [DMA ile ADC Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DMA%20ile%20ADC%20Deger%20Okuma) [HAL, SPL, REGISTER]
-  - [Timer Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Deger%20Okuma) [SPL, REGISTER]
-  - [Timer Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Interrupt) [HAL]
-  - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20ile%20Delay%20Olusturma) [HAL]
-  - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/PWM%20Kullanimi) [HAL, SPL, REGISTER]
-  - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20Gonderme) [HAL, SPL, REGISTER]
-  - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/SPI%20Kullanimi) [HAL]
-  - [I2C Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/I2C%20Kullanimi) [SPL, REGISTER]
+  - [Harici Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Harici%20Led%20Yakma) 
+  - [Buton ile Led Yakma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Buton%20ile%20Led%20Yakma) 
+  - [External Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/External%20Interrupt) 
+  - [ADC Verisi Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Verisi%20Okuma) 
+  - [ADC Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Interrupt) 
+  - [DAC Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DAC%20Kullanimi) 
+  - [ADC Değeri İle DAC Kontrolü](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu)
+  - [DMA ile ADC Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/DMA%20ile%20ADC%20Deger%20Okuma) 
+  - [Timer Interrupt](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20Interrupt) 
+  - [Timer ile Delay Oluşturma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/Timer%20ile%20Delay%20Olusturma)
+  - [PWM Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/PWM%20Kullanimi)
+  - [UART ile Mesaj Gönderme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/UART%20ile%20Mesaj%20Gonderme) 
+  - [SPI Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Uygulamalar/SPI%20Kullanimi) 
   
 #### Örnekler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Uc%20Eksen%20Deger%20Okuma) [MPU6050, ADXL345]
