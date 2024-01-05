@@ -30,8 +30,6 @@
 #### Örnekler
   - [Üç Eksen Değer Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Uc%20Eksen%20Deger%20Okuma) [MPU6050, ADXL345]
   - [Kablosuz Haberleşme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Kablosuz%20Haberlesme) [LORA, NRF24]
-  - [Ekran Kullanımı](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Ekran%20Kullanimi) [LCD, NEXTION]
-  - [Sinyal Okuma](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sinyal%20Okuma) [ENCODER]
   - [İrtifa Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Irtifa%20Olcum) [BMP180, BME280]
   - [Sıcaklık Ölçüm](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Sicaklik%20Olcum) [NTC]
   - [Arayüz ile Test Etme](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/tree/main/Ornekler/Arayuz%20ile%20Test%20Etme) [C#]
