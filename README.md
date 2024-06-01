@@ -13,7 +13,7 @@
   - [10 I2C](/Konular/10%20I2C.pdf)
 
 #### Uygulamalar
-  - [Harici Led Yakma](/Uygulamalar/Harici%20Led%20Yakma/) 
+  - [Harici Led Yakma](/Uygulamalar/Harici%20Led%20Yakma) 
   - [Buton ile Led Yakma](/Uygulamalar/Buton%20ile%20Led%20Yakma) 
   - [External Interrupt](/Uygulamalar/External%20Interrupt) 
   - [ADC Verisi Okuma](/Uygulamalar/ADC%20Verisi%20Okuma) 
