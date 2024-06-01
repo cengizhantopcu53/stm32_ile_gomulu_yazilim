@@ -38,6 +38,8 @@ Counter Period kısmında her seferinde taşma işlemi bittikten sonra tekrar bu
 <img src="image\image-12.png" width="500"> <br>
 • 1sn aralıklarla ledi yakıp söndürüyor. <br>
 <img src="image\image-13.png" width="500"> <br>
+• HAL_TIM_PeriodElapsedCallback fonksiyonu, kullanıcı tarafından özelleştirilerek ihtiyaç duyulan işlevselliği sağlar. Bir timer yapılandırıldığında ve kesme modunda çalıştırıldığında, belirlenen periyot sona erdiğinde bu fonksiyon otomatik olarak çağrılır. <br>
+• Fonksiyonunun kullanım alanları; Belirli zaman aralıklarıyla sensörlerden veri okuma, veri işleme, veya durum güncellemeleri gibi işlemler, uygulamanın çalışma süresini ölçmek, belirli süreler sonunda uyarılar veya hatırlatmalar oluşturmak, işlemciyi bloke etmeden belirli bir süre beklemek için kullanılabilir.
 
 ---
 

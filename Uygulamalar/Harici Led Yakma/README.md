@@ -43,14 +43,15 @@ Oluşturulan iki fonksiyon kod içerisine yazmadan önce private function protot
 • Hex dosyasını yüklemek için STM32 ST-LINK Utility ya da STM32Cube Programmer programlarını kullanabiliriz. Eğer STM32Cube Programmer programını kullanıyorsak kodu yükledikten sonra işlemci üzerindeki reset tuşuna basarak yüklediğimiz kod çalıştırırız. <br>
 Eğer STM32Cube Programmer programını kullanıyorsak kodu yükledikten sonra işlemci üzerindeki reset tuşuna basarak yüklediğimiz kod çalıştırırız. <br>
 
+## Debug Kısmı
+
+• [Debug](https://www.youtube.com/watch?v=sNGTGVnT0D8) hakkında bilgi edinmek için linkteki videoyu izleyebilirisiniz. <br>
+• **Breakpoint**, kodun durmasını istediğimiz duraklar şeklinde tanımlanır. Breakpoint konacak satıra imleci getirip sol kenardaki şeride çift tıklanarak konur. Gerekli yerlere breakpoinler koyulduktan sonra debug modunda proje çalıştırılabilir ya da kısayol tuşu olarak F11'i tuşlayabiliriz. <br>
+• **Resume**, breakpointte duran programımın diğer breakpointe kadar çalışmasını sağlar. Kısayol tuşu olarak F8'i tuşlayabiliriz. <br>
+• **Step Into**, breakpoint’imizin bulunduğu yerde bir metot var ise o metotun içine girilir. İçine girdiğimiz metot’un breakpoint ile belirlenip belirlenmediğine bakmazsızın yapılır. Kısayol tuşu olarak F5'i tuşlayabiliriz. <br>
+• **Step Over**, programın bulunduğu yerden bir satır ilerlemesini sağlanır. Özellikle metotların içerisinde ilerlemede kullanılır. Kısayol tuşu olarak F6'i tuşlayabiliriz. <br>
+• **Step Return**, içine girilen metottan geri çıkılmasını sağlar. Metoda girmeden önceki yere gidilir. Metot içerisine tamamen bakılmış olup olmamasına bakmaz. Kısayol tuşu olarak F7'i tuşlayabiliriz. <br>
 
 ## Git Kısmı
 
 • STM32CubeIDE üzerinden oluşturduğumuz projeyi git ile kullanmak için [videoya](https://www.youtube.com/watch?v=_96FSH7uI0E) ve [makaleye](https://shadyelectronics.com/how-to-use-github-with-stm32cubeide/) göz atabiliriz. 
-
-
----
-
-<br>
-
-
