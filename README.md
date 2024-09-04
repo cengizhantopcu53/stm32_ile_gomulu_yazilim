@@ -40,7 +40,9 @@
   - [Konum Bilgisi](/Ornekler/Konum%20Bilgisi) [NEO6M]
   - [Motor Sürme](/Ornekler/Motor%20Surme) [L298N]
 
+#### Kılavuzlar
+  - [Mikrodenetleyici Driver Geliştirme](https://github.com/cengizhantopcu53/mikrodenetleyici_driver_gelistirme)
+
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, USB) kullanarak yapılan uygulamalar ve projeler ile ilgili [yazılara](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz. Bu alanda çalışan arakdaşlara yardımcı olması adına [komponentlerin](https://github.com/atalayroket/atalay_gomuluyazilim) kütüphaneleri paylaşılmıştır.***
 ##
-
