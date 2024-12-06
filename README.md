@@ -14,19 +14,16 @@
   - [11 USB](/Konular/11%20USB.pdf)
 
 #### Uygulamalar
-  - [Harici Led Yakma](/Uygulamalar/Harici%20Led%20Yakma) 
+  - [Led Yakma](/Uygulamalar/Led%20Yakma) 
   - [Buton ile Led Yakma](/Uygulamalar/Buton%20ile%20Led%20Yakma) 
-  - [External Interrupt](/Uygulamalar/External%20Interrupt) 
-  - [DMA Kullanımı](/Uygulamalar/DMA%20Kullanimi)   
+  - [DMA Kullanımı](/Uygulamalar/DMA%20Kullanimi) 
   - [ADC Verisi Okuma](/Uygulamalar/ADC%20Verisi%20Okuma) 
-  - [ADC Interrupt](/Uygulamalar/ADC%20Interrupt) 
-  - [DAC Kullanımı](/Uygulamalar/DAC%20Kullanimi) 
+  - [DAC Kullanımı](/Uygulamalar/DAC%20Kullanimi)
   - [ADC Değeri İle DAC Kontrolü](/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu)
-  - [DMA ile ADC Değer Okuma](/Uygulamalar/DMA%20ile%20ADC%20Deger%20Okuma) 
-  - [Timer Interrupt](/Uygulamalar/Timer%20Interrupt) 
+  - [Timer Değer Okuma](/Uygulamalar/Timer%20Deger%20Okuma) 
   - [Timer ile Delay Oluşturma](/Uygulamalar/Timer%20ile%20Delay%20Olusturma)
-  - [PWM Kullanımı](/Uygulamalar/PWM%20Kullanimi)
-  - [UART ile Mesaj Gönderme](/Uygulamalar/UART%20ile%20Mesaj%20Gonderme) 
+  - [PWM Kullanımı](/Uygulamalar/PWM%20Kullanimi) 
+  - [UART ile Mesaj Gönderme](/Uygulamalar/UART%20ile%20Mesaj%20Gonderme)
   - [SPI Kullanımı](/Uygulamalar/SPI%20Kullanimi) 
   - [USB ile Sanal Port Kullanımı](/Uygulamalar/USB%20ile%20Sanal%20Port%20Kullanimi)
   
@@ -42,6 +39,8 @@
 
 #### Kılavuzlar
   - [Mikrodenetleyici Driver Geliştirme](https://github.com/cengizhantopcu53/mikrodenetleyici_driver_gelistirme)
+
+<br>
 
 ##
 ***STM32 işlemci üzerinden C dili ile çevre birimleri (GPIO, EXTI, ADC, DAC, DMA, TIMER, PWM) ve haberleşme protokolleri (USART, I2C, SPI, USB) kullanarak yapılan uygulamalar ve projeler ile ilgili [yazılara](https://github.com/cengizhantopcu53/stm32_ile_gomulu_yazilim/blob/main/stm32_ile_gomulu_yazilim.pdf) ulaşabilirsiniz. Bu alanda çalışan arakdaşlara yardımcı olması adına [komponentlerin](https://github.com/atalayroket/atalay_gomuluyazilim) kütüphaneleri paylaşılmıştır.***
