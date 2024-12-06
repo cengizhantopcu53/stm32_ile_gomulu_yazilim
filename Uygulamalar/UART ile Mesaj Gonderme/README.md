@@ -11,6 +11,7 @@
 • Seri Port işlemlerinde kullandığınız TTL dönüştürücü bilgisayarınızda gözükmüyorsa çipin driverını yüklemeniz gerekiyor. [FT232RL](https://www.ftdichip.com/old2020/Drivers/CDM/CDM%20v2.12.28%20WHQL%20Certified.zip) için linkten driver indirip aygıt yöneticisinden güncelleyebilirsiniz. <br>
 • Printf komutu ile veri göndermek için https://www.youtube.com/watch?v=SpTh30wTmcM ile https://www.youtube.com/watch?v=WnCpPf7u4Xo linklerindeki videoları inceleyebiliriz. <br>
 [Printf](https://bilgisayarkavramlari.com/2012/05/31/printf-sprintf-fprintf/) fonksiyonu ve türevleri hakkında bilgi almak için link üzerinden bakabiliriz. <br>
+• Aşağıda yapılan örnek çalışmalar Transmit için yapılmıştır fakat Receive için yapılan işlemler de aynıdır.
 
 <br>
 <br>
@@ -30,25 +31,29 @@
 • Sprintf komutu için stdio.h, strlen kütüphanesi için string.h kütüphanesini ekledik. <br>
 <img src="image\image-5.png" width="150"> <br>
 • Göndereceğimiz ifadeleri tutacağımız char değişkenli dizi ekliyoruz. <br>
-<img src="image\image-6.png" width="150"> <br>
-• Sprintf komutu ile yazdırma yaparken fonksiyon içinde de kullanabiliriz ya da ayrı satırda yazıp daha sonra fonksiyon içinde boyutunu belirtmek için strlen fonksiyonunu kullanırız. <br> 
-• Strlen yerine sizeof fonksiyonu da kullanabilir. <br>
+<img src="image\image-6.png" width="200"> <br>
+• Yazdırma yapmak için **sprintf** veya **snprintf** fonksiyonlarını kullanabiliriz. <br> 
+sprintf fonksiyonu, belirtilen formatta bir dizi karakteri bir buffer'a yazar. <br> 
+snprintf fonksiyonu, belirtilen formatta bir dizi karakteri bir buffer'a yazar, ancak aynı zamanda bu buffer'ın maksimum boyutunu da kontrol eder. <br> 
+• Boyutunu belirtmek için **strlen** veya **sizeof** fonksiyonunu kullanırız. <br> 
+sizeof, bir veri türünün veya değişkenin bellekte kapladığı toplam boyutu (byte cinsinden) belirleyen bir operatördür. Derleme zamanında değerlendirilir. <br> 
+strlen fonksiyonu, bir karakter dizisindeki karakterlerin sayısını hesaplar. Bu sayıya, dizinin sonunu belirten null karakter (\0) dahil edilmez. <br> 
 • \n, metinde bir alt satıra geçmek için \r ise metinde paragraf başı yapmak için kullanılır. <br> 
-<img src="image\image-7.png" width="550"> <br>
+<img src="image\image-7.png" width="600"> <br>
 • USART işleminde ilk olarak polling mode için HAL_UART_Transmit() fonksiyonunu kullanacağız. <br>
-• Fonksiyon için 4 parametre giriyoruz. Birincisi UART ayarların tutulduğu veri yapısı, ikincisi gönderilecek veri, üçüncüsü verinin kaç karakter göndereceğimiz yani kaç byte olduğu ve son olarak dördüncüsü veri aktarımının tamamlanması için beklenen maksimum süredir. <br>
-uint8_t tipinde bir data göndermemizi istiyor fakat biz char değişkeni kullandığımızdan bir çevrim yapmamız gerekiyor. <br>
+• Fonksiyon için 4 parametre giriyoruz. Birincisi UART ayarların tutulduğu **veri yapısı**, ikincisi gönderilecek **veri**, üçüncüsü verinin kaç karakter göndereceğimiz yani **kaç byte** olduğu ve son olarak dördüncüsü veri aktarımının tamamlanması için beklenen **maksimum süredir**. <br>
+• uint8_t tipinde bir data göndermemizi istiyor fakat biz char değişkeni kullandığımızdan bir çevrim yapmamız gerekiyor. <br>
 <img src="image\image-8.png" width="450"> <br>
 • Float değeri yazdırmak için bir ayar yapılmalıdır. Bunun için proje dosyasına sağ tıklayıp Properties tıklanır. C/C++ Build kısmından Settings kısmına gelinir ve buradan Tool Settings kısmından MCU Settings kısmından -u_printf_float kutucuğu işaretlenir. <br>
 <img src="image\image-9.png" width="500"> <br>
 • Timeout süresi, milisaniye cinsinden belirtilir. Kod kısmında timeout süresi 50 olarak belirledik. Bu, veri gönderme işleminin en fazla 50 milisaniye sürmesi gerektiği anlamına gelir. Eğer belirtilen süre içinde veri gönderimi tamamlanamazsa, iletişim timeout olur ve ilgili hata durumu işlenebilir. <br>
 • Timeout süresini ihtiyaçlarınıza göre ayarlayabiliriz. Daha uzun süreler belirlemek, daha yavaş veya yoğun bir iletişim ortamında güvenilirlik sağlayabilir. Ancak, çok uzun timeout süreleri kullanmak, iletişim hatalarını algılama ve hızlı bir şekilde hata durumlarına yanıt verme yeteneğini azaltabilir. <br>
 • Timeout süresini öğrenmek için farklı yollara başvurabiliriz. <br> 
-Biz Hal_GetTick() fonksiyonunu kullanarak ne kadarlık bir veri gönderme süresi olduğunu buluruz. Bize sonuç verirken 1ms gecikme ekler. <br>
+Biz **Hal_GetTick()** fonksiyonunu kullanarak ne kadarlık bir veri gönderme süresi olduğunu buluruz. Bize sonuç verirken 1ms gecikme ekler. <br>
 • Kodu aşağıdaki gibi düzenleriz. Int değişken türünde time1 ve time değişkenlerini globalde atarız. Daha sonra fonksiyonun dönüşünden gelen değeri önceki satırdaki gelen değeri çıkararak sonuca ulaşırız. <br>
 • Debug girdiğimizde time değişkenine baktığımızda 36 değeri döndürüyor. Çıkan sonuçtan 1 çıkarırız. Sonuç olarak toplamda 35ms'de veriyi gönderiyor. Böylece Timeout için girdiğimiz 50 değeri yeterlidir. <br>
 • Hesap yaparak öğrenmek istersek 35 byte veri gönderdiğimizi biliyoruz. Bu değeri bir byte için geçen süre ile çarparsak buluruz. <br> 
-9600 baud rate için bir byte'ın iletiminde geçen süre 1/9600 den çıkan sonucu 10 ile çarparız daha sonra gönderilen bytte adeti olan 35 ile çarparsak sonucunda 35ms olduğunu buluruz. <br> 
+9600 baud rate için bir byte'ın iletiminde geçen süre 1/9600'den çıkan sonucu 10 ile çarparız daha sonra gönderilen bytte adeti olan 35 ile çarparsak sonucunda 35ms olduğunu buluruz. <br> 
 • Sonuç olarak Polling metodunu kullanarak ana döngüde transmit yaparken 35ms bekleme yapıyor. Bu bekleme döngünün çalışrken başka yapılan bir işi yavaşlatır. <br> 
 <img src="image\image-10.png" width="450"> <br>
 • Printf komutu ile yazdırmak istersek aşağıdaki kodu ekleriz. Bu kod ile while döngüsünde Transmit fonksiyonunu yazmamıza gerek kalmıyor. <br>
@@ -67,11 +72,12 @@ Biz Hal_GetTick() fonksiyonunu kullanarak ne kadarlık bir veri gönderme süres
 ## Kod Kısmı
 
 • USART işleminde interrupt mode olarak HAL_UART_Transmit_IT() fonksiyonunu kullanacağız. Böylece döngünün ana akışını kesmeden veriyi yollamış olacağız. <br> 
-Ayrıca HAL_UART_TxCpltCallback, geri çağırma fonksiyonu ile UART iletişim modülü tarafından bir veri iletim işlemi tamamlandığında otomatik olarak çağırarak yapılması gereken işlemleri gerçekleştirebiliriz. <br> 
-• Interruptı kullanırken iki türlü kullanabiliriz. Birincisi, Transmit fonksiyonu ana döngü içerisinde yazıp çalıştırabiliriz daha sonra kesmeye girdiğinde Callback fonksiyonu ile başka işlemler gerçekleştirebiliriz. <br> 
+Ayrıca **HAL_UART_TxCpltCallback**, geri çağırma fonksiyonu ile UART iletişim modülü tarafından bir veri iletim işlemi tamamlandığında otomatik olarak çağırarak yapılması gereken işlemleri gerçekleştirebiliriz. <br>
+Bu fonksiyonun amacı, veri gönderimi tamamlandığında gerçekleştirilmesi gereken işleri yapmak (örneğin, başka bir veri gönderme işlemi başlatmak, bir bayrak ayarlamak, vs.) için kullanıcı tarafından doldurulmasıdır. <br> 
+• Interruptı kullanırken iki türlü kullanabiliriz. 
+Birincisi, Transmit fonksiyonu ana döngü içerisinde yazıp çalıştırabiliriz daha sonra kesmeye girdiğinde Callback fonksiyonu ile başka işlemler gerçekleştirebiliriz. <br> 
 <img src="image\image-14.png" width="400"> <br>
-• İkincisinde ana döngüye girmeden bir kere Transmit edip daha sonra Callback fonksiyonuyla transfer işlemi gerçekleştirebiliriz. <br> 
-Burada döngüden her çıktığında kesmeye gidiyor. <br>
+• İkincisinde ana döngüye girmeden bir kere Transmit edip daha sonra Callback fonksiyonuyla transfer işlemini sürekli hale getirebiliriz. <br> 
 <img src="image\image-15.png" width="400"> <br>
 <img src="image\image-16.png" width="400"> <br>
 • Her iki durumda da ana döngü bloke olmamış olacaktır. <br> 
@@ -83,8 +89,9 @@ Burada döngüden her çıktığında kesmeye gidiyor. <br>
 ## Konfigürasyon Kısmı
 
 • Eğer DMA kullanacaksak aktif edilmesi gerekir. <br>
+• Memory'den Peripheral'a yazacağımızdan DMA Request için USART1_TX seçilir. <br>
 • Dairesel modda, DMA verileri iletmeye devam edecektir. Tüm verileri ilettikten sonra, otomatik olarak baştan başlayacaktır. <br>
-Hafızada sadece 1 byte yer kaplayan karakterleri gönderdiğimiz için Data With Byte olarak seçilmiştir. <br>
+Hafızada sadece 1 byte yer kaplayan karakterleri gönderdiğimiz için Data With kısmı Byte olarak seçilmiştir. <br>
 <img src="image\image-17.png" width="450"> <br>
 
 ## Kod Kısmı
@@ -92,8 +99,13 @@ Hafızada sadece 1 byte yer kaplayan karakterleri gönderdiğimiz için Data Wit
 • USART işleminde DMA mode olarak HAL_UART_Transmit_DMA() fonksiyonunu kullanacağız.  <br>
 DMA ayrıca kesme ile aynı şekilde çalışır. Böylece kesme için kullanabildiğimiz Callback fonksiyonlarını kullanabiliriz. <br>
 <img src="image\image-18.png" width="400"> <br>
-• Ana döngüye girmeden hem de Callback fonksiyonu çağırmadan da gönderme işlemi yapabiliriz. <br>
+• İkincisinde ana döngüye girmeden bir kere Transmit edip daha sonra Callback fonksiyonuyla transfer işlemini sürekli hale getirebiliriz. <br>
 <img src="image\image-19.png" width="400"> <br>
+• Eğer sürekli veri göndermek istiyorsan, DMA'yı **Circular** modda çalıştırabiliriz. Bu modda DMA transferi hiç durmaz, sürekli olarak veriyi gönderir. <br>
+• Duruma göre bu yöntemlerden birini seçebilirsin. <br>
+**Sürekli döngüde tekrarlamak:**, basit ve kolay bir yöntemdir, ancak işlem sürekli döngüde kalır. <br>
+**DMA Transfer Tamamlanma Callback,** daha esnek ve profesyonel bir yaklaşımdır, çünkü verinin ne zaman gönderileceği üzerinde daha fazla kontrol sağlar. <br>
+**Circular Mode,** sürekli ve kesintisiz aynı veriyi göndermek istiyorsan en verimli yöntemdir. <br>
 
 <br>
 
@@ -113,7 +125,7 @@ Bağladığımız kanal için Async Serial seçimi yapıp benzer ayarlamaları y
 • Ayrıca https://www.netdunyasi.com/blog/uploads/images/202105/image_750x_60985f549fe84.jpg linkten ASCII tablosuna bakabiliriz. <br>
 • Binary'e çevirdiğimizde 00110101 değerini görürüz. <br> 
 • İlk ve son bitler start ve stop bit olmak üzere nokta ile belirtilmiş 8 bitlik data ile birlikte toplamda 10 bit var. <br>
-Burada sırayla bakıldığında binary değeri ile aynı sonucu görmüş oluruz. <br> 
+Burada sırayla bakıldığında binary değeri ile aynı sonucu görmüş oluruz. <br> 1
 <img src="image\image-23.png" width="800"> <br>
 
 ## Seri Port Kısmı

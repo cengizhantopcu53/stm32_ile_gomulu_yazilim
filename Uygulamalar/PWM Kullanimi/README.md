@@ -12,7 +12,6 @@
 • Period değerimize göre kanal çıkışlarına Pulse değeri yazacağız. <br> 
 • Period kısmını Duty Cycle en fazla 100 olduğundan Period kısmına 100-1 olarak gireriz. Yani Period 100 ve Pulse değeri 50 girersek aslında %50 Duty Cycle olur. <br>
 • 10 kHZ için işlem sonucunda Prescaler 90 girilir. <br>
-• 1 kHZ = 1000Hz <br>
 <img src="image\image-4.png" width="400"> <br>
 <img src="image\image-5.png" width="300"> <br>
 <img src="image\image-6.png" width="300"> <br>

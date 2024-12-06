@@ -3,6 +3,8 @@
 
 > ## **HAL**
 
+#### Polling
+
 ## Konfigürasyon Kısmı
 
 <img src="image\image-1.png" width="400"> <br>
@@ -46,6 +48,80 @@
 • Diğer kanalı okuması için count değişkeni koyduk. <br>
 <img src="image\image-13.png" width="400"> <br>
 <img src="image\image-14.png" width="400"> <br>
+
+<br>
+
+#### Interrupt
+
+## Konfigürasyon Kısmı
+
+<img src="image\image-15.png" width="400"> <br>
+<img src="image\image-16.png" width="500"> <br>
+• ADC1 için IN0, Temperature Sensor Channel ve Vrefint Channel seçimi yaptık. <br>
+<img src="image\image-17.png" width="150"> <br>
+• Scan Mode ile Continuous Mode Enabled yapılır. <br>
+<img src="image\image-18.png" width="400"> <br>
+• ADC1 için 3 kanal olduğundan her biri için rank işlemi yapılır. <br>
+<img src="image\image-19.png" width="400"> <br>
+• ADC2 için IN1 seçimi yapılır. <br>
+• ADC2 için tek kanal olduğundan Scan Mode seçimi yapılmaz. <br> 
+<img src="image\image-20.png" width="400"> <br>
+<img src="image\image-21.png" width="400"> <br>
+• Interrupt kullanacağımızdan NVIC Settings kısmından Enabled yapılır. <br> 
+• Sadece ADC1 değil ADC2 ve ADC3 için interrupts Enabled yapılmış olur. <br> 
+<img src="image\image-22.png" width="500"> <br>
+
+
+## Kod Kısmı
+
+• ADC için Interrupt Mode kullanımı yapacağız. <br>
+<img src="image\image-23.png" width="500"> <br>
+<img src="image\image-24.png" width="400"> <br>
+• Keseme olduğunda it.c dosyasındaki ADC_IRQHandler fonksiyonuna gelir ve fonksiyon içerisindeki HAL_ADC_IRQHandler fonksiyonunu çalıştırır. <br> 
+• Bizim main.c dosyasında hazır olarak yazılmıştır. <br>
+<img src="image\image-25.png" width="250"> <br>
+• 1578.satırdaki Callback fonksiyonu main.c dosyasında kullanarak Interrupt'a girdiğinde yani ADC çevrimi tamamlandığında bu fonksiyon çalışmaya başlayacaktır. <br>
+<img src="image\image-26.png" width="400"> <br>
+• İçerisine önce hangi ADC'yi çalıştırdığını öğrenmemiz gerekiyor. Bunun için _HAL_ADC_GET_FLAG kullanmamız gerekiyor. <br>
+<img src="image\image-27.png" width="450"> <br>
+<img src="image\image-28.png" width="700"> <br>
+• Temperature için Datasheet kısmından aşağıdaki tabloları kullanıyoruz. <br>  
+<img src="image\image-29.png" width="500"> <br>
+• Aşağıdaki formül üzerinden hesaplıyoruz. <br>
+<img src="image\image-30.png" width="400"> <br>
+<img src="image\image-31.png" width="400"> <br>
+<img src="image\image-32.png" width="200"> <br>
+<img src="image\image-33.png" width="500"> <br>
+<img src="image\image-34.png" width="400"> <br>
+
+<br>
+
+#### DMA
+
+## Giriş
+
+• ADC'den okuduğumuz değerleri, hiç CPU'ya uğratmadan DMA ile direk RAM'e yazacağız. <br>
+
+## Konfigürasyon Kısmı
+
+<img src="image\image-35.png" width="400"> <br>
+<img src="image\image-36.png" width="450"> <br>
+• ADC sürekli dönüşüm modu için **Continuous Conversion** Mode, Enabled yapıldı.  <br>
+• DMA ile ADC'den sürekli veri alımı için **DMA Continuous Requests**, Enabled yapıldı. <br>
+<img src="image\image-37.png" width="450"> <br>
+• DMA ayarları için Add diyoruz. Ardından Stream, Direction ve Priority için seçenekleri seçiyoruz. <br> 
+• Daha sonra Direction kısmından seçtiğimiz Peripheral ve Memory için adres değişikliği için Increment Adress için işaretliyoruz. <br> 
+Ardından gönderilecek data boyutu belirliyoruz. 12bit çalıştığımızdan 16 bitlik olan Half Word seçimi yapıyoruz. <br>
+<img src="image\image-38.png" width="450"> <br>
+
+## Kod Kısmı
+
+<img src="image\image-39.png" width="500"> <br>
+• **pData** kısmına veriyi tutacağımız değişkeni yazıyoruz. Bizim değişken 16 bit olarak tanımladığımızdan dönüştürmemiz gerekiyor. <br>
+• **Length** ile kaç tane veri okuyacağımızı yazıyoruz. <br>
+<img src="image\image-40.png" width="500"> <br>
+<img src="image\image-41.png" width="200"> <br>
+<img src="image\image-42.png" width="400"> <br>
 
 
 ---

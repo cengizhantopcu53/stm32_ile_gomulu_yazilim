@@ -33,12 +33,12 @@
 
 ## Konfigürasyon Kısmı
 
-• DMA 1 Channel 1 için Interrupt aktif edilir. <br>
+• DMA1 Channel 1 için Interrupt aktif edilir.  <br>
 <img src="image\image-5.png" width="700"> <br>
 
 ## Kod Kısmı
 
-• Benzer çalışmayı Interrupt ile yapmış olduk.
+• Benzer çalışmayı Interrupt ile yapmış olduk.  <br>
 <img src="image\image-6.png" width="700"> <br>
 
 ---

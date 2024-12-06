@@ -12,8 +12,8 @@
 ## Konfigürasyon Kısmı
 
 <img src="image\image-1.png" width="400"> <br>
-• Timer1 birimini kullanacağız ve bu birim APB1 clock hattına bağlıdır. <br> 
-• Mode kısmında Clock Source için Internal Clock seçimi yapıyoruz. <br>
+• **Timer1** birimini kullanacağız ve bu birim **APB1** clock hattına bağlıdır. <br> 
+• Mode kısmında Clock Source için **Internal Clock** seçimi yapıyoruz. <br>
 • Prescaler değerine APB1 clock hattın değerini yazıyoruz. Counter Period değerine yazılabilecek maksimum değer olan 16 bitin karşılığı 65535 değerini yazıyoruz. <br>
 <img src="image\image-2.png" width="400"> <br>
 

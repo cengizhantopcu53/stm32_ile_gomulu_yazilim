@@ -1,5 +1,5 @@
 
-# Harici Led Yakma
+# Led Yakma
 
 > ## **HAL**
 
@@ -52,6 +52,20 @@ Eğer STM32Cube Programmer programını kullanıyorsak kodu yükledikten sonra i
 • **Step Over**, programın bulunduğu yerden bir satır ilerlemesini sağlanır. Özellikle metotların içerisinde ilerlemede kullanılır. Kısayol tuşu olarak F6'i tuşlayabiliriz. <br>
 • **Step Return**, içine girilen metottan geri çıkılmasını sağlar. Metoda girmeden önceki yere gidilir. Metot içerisine tamamen bakılmış olup olmamasına bakmaz. Kısayol tuşu olarak F7'i tuşlayabiliriz. <br>
 
-## Git Kısmı
+## Derleme Özelikleri
+• Oluşturulan klasörün derlemeye dahil olması için klasöre sağ tıklayıp Properties diyoruz ve burada C/C++ Build sekmesinden **Exclude resource from build** ticki kaldırıyoruz. 
+• Bir dosyanın derlenmesini istemiyorsak **Exclude resource from build** işaretlenir. Böylece derleme aşamasında bu dosya derlenmez. 
+• Örneğin Driver adında klasör oluşturup ardından klasörün içine Inc ve Src adında klasör ekliyorum ve son olarak Header dosyalarını Include etmemiz gerekiyor. Bunun için projeye sağ tıklayıp Properties diyoruz. Burada sol tarafta **C/C++ Build** kısımından **Settings** tıklayıp **MCU GCC Compiler** içeriğindeki **Include paths** tıklayıp burada Add diyoruz ve Workspce tıklayıp klasörümüzü ekliyoruz. 
 
-• STM32CubeIDE üzerinden oluşturduğumuz projeyi git ile kullanmak için [videoya](https://www.youtube.com/watch?v=_96FSH7uI0E) ve [makaleye](https://shadyelectronics.com/how-to-use-github-with-stm32cubeide/) göz atabiliriz. 
+<img src="image\image-11.png" width="700"> <br>
+
+## Dokümantasyon Kısmı
+
+• STM32CubeIDE üzerinden oluşturduğumuz projeyi git ile kullanmak için [videoya](https://www.youtube.com/watch?v=_96FSH7uI0E) ve [makaleye](https://shadyelectronics.com/how-to-use-github-with-stm32cubeide/) göz atabiliriz. <br>
+• Projede koda yorum satırları ekleyerek dokümantasyon oluşturmak için [DoxyGen](https://youtu.be/edkvo5deT0U?si=gtTa2dLLiGC3uDtd) programı kullanarak web sayfası temelli çıktılara dönüştürebiliyoruz. DoxyGen ile nasıl belgeleneceği ve oluşturulan belgelerin Github Pages olarak nasıl yükleneceği hakkında [detaylı](https://youtu.be/EweioUPl_j0?si=Tz6LA5dcIAZ68rgM) bilgi için linkteki videodan yararlanabiliriz.
+
+---
+
+<br>
+
+

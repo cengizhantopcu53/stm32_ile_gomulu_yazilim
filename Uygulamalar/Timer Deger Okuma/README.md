@@ -1,17 +1,20 @@
-
-# Timer Interrupt
+# Timer Değer Okuma
 
 > ## **HAL**
+
+#### Interrupt
 
 ## Konfigürasyon Kısmı
 
 <img src="image\image-1.png" width="400"> <br>
 <img src="image\image-2.png" width="400"> <br>
-• Timers kısmından TIM2 seçimi yapılır. Ardından Mod kısmından sadece Clock Source kısmını Internal Clock yaparız. <br>
+• Timers kısmından TIM2 seçimi yapılır. <br>
+Ardından Mod kısmından sadece Clock Source kısmını Internal Clock yaparız. <br>
 <img src="image\image-3.png" width="300"> <br>
-• Sistem clock 180MHz ayarlamıştık ve TIM2 clock veri yolu ise 45MHz'dir. fakat bunun 2 katı değeri alıyorlardı yani 90MHz'dir. <br>
+• Sistem clock 180MHz ayarlamıştık ve TIM2 clock veri yolu ise 45MHz'dir fakat bunun 2 katı değeri alıyorlardı yani 90MHz'dir. <br>
 <img src="image\image-4.png" width="250"> <br>
-• Daha sonra Parameter Settings'den TIM2 1 saniye aralıklarla tekrarlı şekilde çalıştıracak değerler girilir. <br> 
+• Daha sonra Parameter Settings'den TIM2 için 1 saniye aralıklarla tekrarlı şekilde çalıştıracak **Precaler** ve **Period** değerler girilir. <br> 
+<img src="image\image-6.png" width="300"> <br>
 Sayma işlemi 0'dan başlamayıp 1'den başladığından 1 eksiğini alarak yazarız. <br> 
 • Prescalaer bizim sayısının en üst seviyesini belirler. Burası 16 bit olduğundan en fazla 65535 yazabilirim. <br>
 TIM2 clock hızı 90MHz olduğundan bunu kaça bölmeliyim diye soruyoruz. Bu clock hız için 45000'e bölüyoruz. Bu sayı da 44999 sayısı yapıyor. Bu değer bizim prescaler ön bölücü değerimiz oluyor. <br>
@@ -19,10 +22,9 @@ TIM2 clock hızı 90MHz olduğundan bunu kaça bölmeliyim diye soruyoruz. Bu cl
 Counter Period kısmında her seferinde taşma işlemi bittikten sonra tekrar bunu yükler bu sebeple yükleyeceği değeri yazarız. <br> 
 • Sayma şeklini Up belirleyip yukarı doğru sayıyor. <br> 
 • Auto-reload preload kısmında Enabled diyerek sayma bittiğinde başa dönmesini sağlarız. <br>
-• 2000 değeri yazmasaydık sonuç 2000 Hz olacağından sonucunda 0,0005s yani 1 sn=1000 ms olmak üzere 0,5 ms olacaktı. Aslında bu 0,5 ms değeri bizim period süremiz oluyor. <br> 
-• Böylece 2000 kere 0,5 ms aralıklarla sayma yapacak sonucunda 1000ms yani 1 sn sonra taşma olacak. <br>
 <img src="image\image-5.png" width="350"> <br>
-<img src="image\image-6.png" width="300"> <br>
+• 2000 değeri yazmasaydık sonuç 2kHz olacağından sonucunda 0,0005s yani 0,5 ms olacaktı. Bu 0,5 ms değeri, sayma işlemi sırasında her bir artışın süresini temsil eder. <br> 
+• Böylece 2000 kere 0,5 ms aralıklarla sayma yapacak sonucunda 1000ms yani 1 sn sonra taşma olacak. <br>
 <img src="image\image-7.png" width="300"> <br>
 • NVIC Settings kısmından TIM2 global interrupt Enabled yapılır. Bununla her güncellemede, sayıyı bitirmede bir interrupt oluşmasını sağlıyoruz. <br>
 <img src="image\image-8.png" width="450"> <br>
@@ -44,3 +46,4 @@ Counter Period kısmında her seferinde taşma işlemi bittikten sonra tekrar bu
 ---
 
 <br>
+

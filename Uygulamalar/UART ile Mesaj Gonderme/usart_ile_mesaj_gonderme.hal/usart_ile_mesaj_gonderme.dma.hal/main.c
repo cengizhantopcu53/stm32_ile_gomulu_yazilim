@@ -47,8 +47,6 @@ DMA_HandleTypeDef hdma_usart1_tx;
 char tx_buff[50];
 uint8_t vize=65,final=87;
 float ortalama;
-
-int time1, time;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -62,10 +60,9 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int _write(int file, char *ptr, int len)
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
-	HAL_UART_Transmit(&huart1, (uint8_t *)ptr, len, HAL_MAX_DELAY);
-	return len;
+  HAL_UART_Transmit_DMA(&huart1, tx_buff, strlen(tx_buff));
 }
 /* USER CODE END 0 */
 
@@ -102,6 +99,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ortalama=(vize * 0.4) + (final * 0.6);
   sprintf(tx_buff,"Vize:%d, Final:%d, Ortalama:%.2f\r\n",vize,final,ortalama);
+
+  HAL_UART_Transmit_DMA(&huart1, tx_buff, strlen(tx_buff));
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -111,9 +110,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //HAL_UART_Transmit (&huart1, tx_buff, strlen(tx_buff), 100);
-	  printf("Vize: %d, Final:%d, Ortalama:%.2f\r\n",vize,final,ortalama);
-	  HAL_Delay(500);
+	  //HAL_UART_Transmit_DMA(&huart1, tx_buff, strlen(tx_buff));
   }
   /* USER CODE END 3 */
 }
