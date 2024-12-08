@@ -29,16 +29,6 @@
   - [USB ile Sanal Port Kullanımı](/Uygulamalar/USB%20ile%20Sanal%20Port%20Kullanimi)
   - [CAN Kullanımı](/Uygulamalar/CAN%20Kullanimi)
 
-#### Örnekler
-  - [Üç Eksen Değer Okuma](/Ornekler/Uc%20Eksen%20Deger%20Okuma) [MPU6050, ADXL345]
-  - [Kablosuz Haberleşme](/Ornekler/Kablosuz%20Haberlesme) [LORA, NRF24]
-  - [İrtifa Ölçüm](/Ornekler/Irtifa%20Olcum) [BMP180, BME280]
-  - [Arayüz ile Test Etme](/Ornekler/Arayuz%20ile%20Test%20Etme) [C#]
-  - [Sıcaklık Ölçüm](/Ornekler/Sicaklik%20Olcum) [NTC]
-  - [Sinyal Okuma](/Ornekler/Sinyal%20Okuma) [BUTTON]
-  - [Konum Bilgisi](/Ornekler/Konum%20Bilgisi) [NEO6M]
-  - [Motor Sürme](/Ornekler/Motor%20Surme) [L298N]
-
 #### Kılavuzlar
   - [Mikrodenetleyici Driver Geliştirme](https://github.com/cengizhantopcu53/mikrodenetleyici_driver_gelistirme)
 
