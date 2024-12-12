@@ -22,7 +22,6 @@
   - [DAC Kullanımı](/Uygulamalar/DAC%20Kullanimi)
   - [ADC Değeri İle DAC Kontrolü](/Uygulamalar/ADC%20Degeri%20%C4%B0le%20DAC%20Kontrolu)
   - [Timer Değer Okuma](/Uygulamalar/Timer%20Deger%20Okuma) 
-  - [Timer ile Delay Oluşturma](/Uygulamalar/Timer%20ile%20Delay%20Olusturma)
   - [PWM Kullanımı](/Uygulamalar/PWM%20Kullanimi) 
   - [UART ile Mesaj Gönderme](/Uygulamalar/UART%20ile%20Mesaj%20Gonderme)
   - [SPI Kullanımı](/Uygulamalar/SPI%20Kullanimi) 
